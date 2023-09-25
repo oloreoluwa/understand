@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>User Data</title>
+    <style>
+
+      body {
+      font-family: Arial, sans-serif;
+      background-color: #ebdca7;
+      padding: 5px;
+      }
+
+      h1 {
+      text-align: center;
+      border: 2px solid white;
+      font-family: Broadway;
+      margin-top: 40px;
+      }
+
+      h2 {
+      text-align: center;
+      text-decoration: underline;
+      border: 2px solid white;
+      font-family: Broadway;
+      font-size: 30px;
+      }
+
+      img{
+      border: 2px solid black;
+      img-align: center;
+      display: block;
+      margin: 0 auto;
+      }
+
+      form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #d6d2ff;
+      border: 2px solid white;
+      padding: 20px;
+      border-radius: 45px;
+      box-shadow: 0 0 20px rgba(107, 107, 255, 0.5);
+      }
+     label {
+            display: block;
+            margin-bottom: 5px;
+      }
+      input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea
+        {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 5px 2px white ;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="radio"],
+        input[type="checkbox"]{
+            margin-right: 5px;
+      }
+       select {
+            height: 35px;
+      }
+      button[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer
+      }
+       button[type="submit"]:hover {
+        border: none;
+            background-color: #0056b3;
+        }
+
+
+    </style>
+  </head>
+    <body>
+      <h1>USER DATA COLLECTION</h1>
+        <img src="https://th.bing.com/th/id/R.5434f48369adc051d6fe2e2f65727a8b?rik=BjrkptMP%2fS2w6w&pid=ImgRaw&r=0" title="A Hand writing his/her details" alt="A Hand writing his/her details" height="200" width="300">
+      <h2>Personal Data</h2>
+      <form action="https://formsubmit.co/andrewolore@gmail.com" method="post">
+          <label>First Name:
+            <input type="text" placeholder="First name" name="Firstname"></label>
+          <label>Last Name:
+            <input type="text" placeholder="Last name" name="Lastname" ></label><br>
+          <label>Date Of Birth:<br>
+            <input type="Date" placeholder="DD/MM/YYYY"  name="DOB"></label><br>
+          <label> Gender:</label><br>
+          <label>Male
+            <input type="radio" name="gender" value="male"></label>
+
+          <label>Female
+            <input type="radio" name="gender" value="female"></label>
+
+          <label>Prefer not to say
+            <input type="radio" name="gender" value="not specified"></label><br>
+
+          <label>Phone Number:<br>
+            <input type="text" placeholder="Phone Number" name="Phone Number" ></label><br>
+          <label>Address:<br>
+            <input type="text" placeholder="Address" Name="Address"></label><br>
+          <label>LGA:<br>
+            <input type="text" placeholder="LGA" name="LGA"></label><br>
+          <label>State:
+            <select>
+              <option value="state1" >Select State</option>
+              <option value="state2" name="State">London</option>
+              <option value="state3" name="State">New York</option>
+              <option value="state4" name="State">Abuja</option>
+              <option value="state5" name="State">Cape Town</option>
+              <option value="state6" name="State">Accra</option>
+              <option value="state7" name="State">Monrovia</option>
+            </select></label>
+          <label>Country:
+            <select>
+              <option value="Country1">Select Country</option>
+              <option value="Country2" name="country" >UK</option>
+              <option value="Country3" name="country">USA</option>
+              <option value="Country4" name="country">Nigeria</option>
+              <option value="Country5" name="country">South Africa</option>
+              <option value="Country6" name="country">Ghana</option>
+              <option value="Country7" name="country">Liberia</option>
+            </select></label><br>
+          <label>Relationship Status:</label><br>
+            <label for="single">Single<br>
+              <input type="checkbox" id="single" name="relationship status" value="single"></label>
+            <label for="dating">Dating<br>
+              <input type="checkbox" id="Dating" name="relationship status" value="dating"></label>
+            <label for="married">Married<br>
+              <input type="checkbox" id="married" name="relationship status" value="married"></label>
+            <label for="divorced">Divorced<br>
+              <input type="checkbox" id="divorced" name="relationship status" value="divorced"></label>
+            <label for="widowed">Widowed<br>
+              <input type="checkbox" id="widowed" name="relationship status" value="widowed"><br></label>
+            <label>Tell Us About Yourself:<br>
+              <textarea rows="15" cols="50" name="Message"></textarea></label>
+            <br>
+          <button type="submit">Submit</button>
+      </form>
+    </body>
+</html>
