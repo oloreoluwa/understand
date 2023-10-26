@@ -167,6 +167,7 @@
                        }
                        input[type="text"],
                        input[type="email"],
+                       input[type="tel"],
                        textarea
                        {
                        color: var(--test);
@@ -214,7 +215,7 @@
                        }
                        label[for="Name"],
                        label[for="email"],
-                       label[for="Phone number"],
+                       label[for="tel"],
                        label[for="Message"]{
                        color: var(--text);
                        }
